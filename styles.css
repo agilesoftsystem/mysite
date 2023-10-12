@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.solid-bg {
+    background-color: #000000; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://jornaldoempreendedor.com.br/wp-content/uploads/2016/09/computer-programming.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #3498db;
+}
+
+.logo {
+    width: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        position: absolute;
+        top: 70px; 
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        display: none; 
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+.banner {
+    padding: 4rem;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #3498db;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem;
+    transition: background-color 0.8s ease;
+}
+.articles.solid-bg {
+    background-color: rgba(0, 0, 0, 1);
+}
+.article {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #3498db;
+}
+
+.article p {
+    color: #ffffff;
+}
+
+.article a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articles img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222222;
+    color: #ffffff;
+}
+  
+/* my photo*/
+
+.sobremim {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: transparent; 
+    transition: background-color 0.8s ease;
+}
+.sobremim.solid-bg {
+    background-color: rgba(0, 0, 0, 1);
+}
+.circle {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin-right: 20px;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.texto-sobremim {
+    flex: 1; 
+}
+
+.texto-sobremim h2 {
+    font-size: 24px;
+}
+
+.texto-sobremim p {
+    font-size: 16px;
+}
+
+.contato1 h1 {
+    font-size: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
